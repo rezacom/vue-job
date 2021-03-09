@@ -1,9 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import JobHome from "../views/jobs/Home.vue";
-import JobAbout from "../views/jobs/About.vue";
-import Jobs from "../views/jobs/jobs/Jobs.vue";
-import JobDetail from "../views/jobs/jobs/JobDetail.vue";
-import Planer from "../views/planer/Planer.vue";
+import About from "../views/About.vue";
+import Jobs from "../views/jobs/Jobs.vue";
+import JobDetail from "../views/jobs/JobDetail.vue";
 import Home from "../views/Home.vue"
 
 const routes = [
@@ -14,32 +12,22 @@ const routes = [
     component: Home,
   },
   {
-    path: "/job/home",
-    name: "JobHome",
-    component: JobHome,
-  },
-  {
-    path: "/job/about",
+    path: "/about",
     name: "About",
-    component: JobAbout,
+    component: About,
   },
   {
-    path: "/job/jobs",
+    path: "/jobs",
     name: "Jobs",
     component: Jobs,
   },
   {
-    path: "/job/jobs/:id",
+    path: "/jobs/:id",
     name: "JobDetail",
     component: JobDetail,
     props: true,
   },
-  // planer
-  {
-    path: "/planer",
-    name: "Planer",
-    component: Planer,
-  },
+
 ];
 
 const router = createRouter({

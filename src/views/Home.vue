@@ -1,32 +1,23 @@
 <template>
-  <div id="nav">
-    <router-link to="/job/home">job-home</router-link> |
-    <router-link to="/planer">planer</router-link>
+  <div class="home">
+    <h2>Job Home</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente, amet quis laboriosam debitis sunt sint corrupti totam animi. Sed laudantium quod repellat officiis similique porro autem alias voluptas harum tenetur optio ullam, molestias saepe quos necessitatibus dolore deserunt culpa? Enim deserunt deleniti a suscipit debitis culpa magnam beatae explicabo molestias ipsam sed, natus sapiente nemo omnis eligendi dolore quod. Porro mollitia, necessitatibus aspernatur sit voluptates pariatur hic natus? Et neque quis, repellendus minus cum ipsam voluptatum. Sint accusamus quaerat iste voluptatem officiis delectus fugit nulla perspiciatis. Laudantium optio cumque, expedita doloribus consequatur magnam doloremque odio dolor impedit nulla quas?
+    </p>
+     <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente, amet quis laboriosam debitis sunt sint corrupti totam animi. Sed laudantium quod repellat officiis similique porro autem alias voluptas harum tenetur optio ullam, molestias saepe quos necessitatibus dolore deserunt culpa? Enim deserunt deleniti a suscipit debitis culpa magnam beatae explicabo molestias ipsam sed, natus sapiente nemo omnis eligendi dolore quod. Porro mollitia, necessitatibus aspernatur sit voluptates pariatur hic natus? Et neque quis, repellendus minus cum ipsam voluptatum. Sint accusamus quaerat iste voluptatem officiis delectus fugit nulla perspiciatis. Laudantium optio cumque, expedita doloribus consequatur magnam doloremque odio dolor impedit nulla quas?
+    </p>
   </div>
-  <h1>HOME MAIN</h1>
 </template>
-<style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
-#nav {
-  padding: 30px;
-}
+<script>
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+export default {
+  name: 'Home',
+  components: {
+    HelloWorld
+  }
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
